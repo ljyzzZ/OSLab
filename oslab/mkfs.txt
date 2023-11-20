@@ -1,0 +1,852 @@
+
+build/utils/mkfs:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	f3 0f 1e fa          	endbr64 
+    1004:	48 83 ec 08          	sub    $0x8,%rsp
+    1008:	48 8b 05 d9 2f 00 00 	mov    0x2fd9(%rip),%rax        # 3fe8 <__gmon_start__@Base>
+    100f:	48 85 c0             	test   %rax,%rax
+    1012:	74 02                	je     1016 <_init+0x16>
+    1014:	ff d0                	call   *%rax
+    1016:	48 83 c4 08          	add    $0x8,%rsp
+    101a:	c3                   	ret    
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	ff 35 2a 2f 00 00    	push   0x2f2a(%rip)        # 3f50 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	f2 ff 25 2b 2f 00 00 	bnd jmp *0x2f2b(%rip)        # 3f58 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102d:	0f 1f 00             	nopl   (%rax)
+    1030:	f3 0f 1e fa          	endbr64 
+    1034:	68 00 00 00 00       	push   $0x0
+    1039:	f2 e9 e1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    103f:	90                   	nop
+    1040:	f3 0f 1e fa          	endbr64 
+    1044:	68 01 00 00 00       	push   $0x1
+    1049:	f2 e9 d1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    104f:	90                   	nop
+    1050:	f3 0f 1e fa          	endbr64 
+    1054:	68 02 00 00 00       	push   $0x2
+    1059:	f2 e9 c1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    105f:	90                   	nop
+    1060:	f3 0f 1e fa          	endbr64 
+    1064:	68 03 00 00 00       	push   $0x3
+    1069:	f2 e9 b1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    106f:	90                   	nop
+    1070:	f3 0f 1e fa          	endbr64 
+    1074:	68 04 00 00 00       	push   $0x4
+    1079:	f2 e9 a1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    107f:	90                   	nop
+    1080:	f3 0f 1e fa          	endbr64 
+    1084:	68 05 00 00 00       	push   $0x5
+    1089:	f2 e9 91 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    108f:	90                   	nop
+    1090:	f3 0f 1e fa          	endbr64 
+    1094:	68 06 00 00 00       	push   $0x6
+    1099:	f2 e9 81 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    109f:	90                   	nop
+    10a0:	f3 0f 1e fa          	endbr64 
+    10a4:	68 07 00 00 00       	push   $0x7
+    10a9:	f2 e9 71 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10af:	90                   	nop
+    10b0:	f3 0f 1e fa          	endbr64 
+    10b4:	68 08 00 00 00       	push   $0x8
+    10b9:	f2 e9 61 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10bf:	90                   	nop
+    10c0:	f3 0f 1e fa          	endbr64 
+    10c4:	68 09 00 00 00       	push   $0x9
+    10c9:	f2 e9 51 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10cf:	90                   	nop
+    10d0:	f3 0f 1e fa          	endbr64 
+    10d4:	68 0a 00 00 00       	push   $0xa
+    10d9:	f2 e9 41 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10df:	90                   	nop
+    10e0:	f3 0f 1e fa          	endbr64 
+    10e4:	68 0b 00 00 00       	push   $0xb
+    10e9:	f2 e9 31 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10ef:	90                   	nop
+    10f0:	f3 0f 1e fa          	endbr64 
+    10f4:	68 0c 00 00 00       	push   $0xc
+    10f9:	f2 e9 21 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10ff:	90                   	nop
+    1100:	f3 0f 1e fa          	endbr64 
+    1104:	68 0d 00 00 00       	push   $0xd
+    1109:	f2 e9 11 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    110f:	90                   	nop
+    1110:	f3 0f 1e fa          	endbr64 
+    1114:	68 0e 00 00 00       	push   $0xe
+    1119:	f2 e9 01 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    111f:	90                   	nop
+
+Disassembly of section .plt.got:
+
+0000000000001120 <__cxa_finalize@plt>:
+    1120:	f3 0f 1e fa          	endbr64 
+    1124:	f2 ff 25 cd 2e 00 00 	bnd jmp *0x2ecd(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>
+    112b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+Disassembly of section .plt.sec:
+
+0000000000001130 <fread@plt>:
+    1130:	f3 0f 1e fa          	endbr64 
+    1134:	f2 ff 25 25 2e 00 00 	bnd jmp *0x2e25(%rip)        # 3f60 <fread@GLIBC_2.2.5>
+    113b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001140 <fclose@plt>:
+    1140:	f3 0f 1e fa          	endbr64 
+    1144:	f2 ff 25 1d 2e 00 00 	bnd jmp *0x2e1d(%rip)        # 3f68 <fclose@GLIBC_2.2.5>
+    114b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001150 <__stack_chk_fail@plt>:
+    1150:	f3 0f 1e fa          	endbr64 
+    1154:	f2 ff 25 15 2e 00 00 	bnd jmp *0x2e15(%rip)        # 3f70 <__stack_chk_fail@GLIBC_2.4>
+    115b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001160 <mmap@plt>:
+    1160:	f3 0f 1e fa          	endbr64 
+    1164:	f2 ff 25 0d 2e 00 00 	bnd jmp *0x2e0d(%rip)        # 3f78 <mmap@GLIBC_2.2.5>
+    116b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001170 <ftruncate@plt>:
+    1170:	f3 0f 1e fa          	endbr64 
+    1174:	f2 ff 25 05 2e 00 00 	bnd jmp *0x2e05(%rip)        # 3f80 <ftruncate@GLIBC_2.2.5>
+    117b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001180 <__assert_fail@plt>:
+    1180:	f3 0f 1e fa          	endbr64 
+    1184:	f2 ff 25 fd 2d 00 00 	bnd jmp *0x2dfd(%rip)        # 3f88 <__assert_fail@GLIBC_2.2.5>
+    118b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001190 <close@plt>:
+    1190:	f3 0f 1e fa          	endbr64 
+    1194:	f2 ff 25 f5 2d 00 00 	bnd jmp *0x2df5(%rip)        # 3f90 <close@GLIBC_2.2.5>
+    119b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000011a0 <feof@plt>:
+    11a0:	f3 0f 1e fa          	endbr64 
+    11a4:	f2 ff 25 ed 2d 00 00 	bnd jmp *0x2ded(%rip)        # 3f98 <feof@GLIBC_2.2.5>
+    11ab:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000011b0 <__xpg_basename@plt>:
+    11b0:	f3 0f 1e fa          	endbr64 
+    11b4:	f2 ff 25 e5 2d 00 00 	bnd jmp *0x2de5(%rip)        # 3fa0 <__xpg_basename@GLIBC_2.2.5>
+    11bb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000011c0 <__strcpy_chk@plt>:
+    11c0:	f3 0f 1e fa          	endbr64 
+    11c4:	f2 ff 25 dd 2d 00 00 	bnd jmp *0x2ddd(%rip)        # 3fa8 <__strcpy_chk@GLIBC_2.3.4>
+    11cb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000011d0 <munmap@plt>:
+    11d0:	f3 0f 1e fa          	endbr64 
+    11d4:	f2 ff 25 d5 2d 00 00 	bnd jmp *0x2dd5(%rip)        # 3fb0 <munmap@GLIBC_2.2.5>
+    11db:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000011e0 <open@plt>:
+    11e0:	f3 0f 1e fa          	endbr64 
+    11e4:	f2 ff 25 cd 2d 00 00 	bnd jmp *0x2dcd(%rip)        # 3fb8 <open@GLIBC_2.2.5>
+    11eb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000011f0 <fopen@plt>:
+    11f0:	f3 0f 1e fa          	endbr64 
+    11f4:	f2 ff 25 c5 2d 00 00 	bnd jmp *0x2dc5(%rip)        # 3fc0 <fopen@GLIBC_2.2.5>
+    11fb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001200 <exit@plt>:
+    1200:	f3 0f 1e fa          	endbr64 
+    1204:	f2 ff 25 bd 2d 00 00 	bnd jmp *0x2dbd(%rip)        # 3fc8 <exit@GLIBC_2.2.5>
+    120b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001210 <__fprintf_chk@plt>:
+    1210:	f3 0f 1e fa          	endbr64 
+    1214:	f2 ff 25 b5 2d 00 00 	bnd jmp *0x2db5(%rip)        # 3fd0 <__fprintf_chk@GLIBC_2.3.4>
+    121b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+Disassembly of section .text:
+
+0000000000001220 <_start>:
+    1220:	f3 0f 1e fa          	endbr64 
+    1224:	31 ed                	xor    %ebp,%ebp
+    1226:	49 89 d1             	mov    %rdx,%r9
+    1229:	5e                   	pop    %rsi
+    122a:	48 89 e2             	mov    %rsp,%rdx
+    122d:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+    1231:	50                   	push   %rax
+    1232:	54                   	push   %rsp
+    1233:	45 31 c0             	xor    %r8d,%r8d
+    1236:	31 c9                	xor    %ecx,%ecx
+    1238:	48 8d 3d c2 05 00 00 	lea    0x5c2(%rip),%rdi        # 1801 <main>
+    123f:	ff 15 93 2d 00 00    	call   *0x2d93(%rip)        # 3fd8 <__libc_start_main@GLIBC_2.34>
+    1245:	f4                   	hlt    
+    1246:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+    124d:	00 00 00 
+
+0000000000001250 <deregister_tm_clones>:
+    1250:	48 8d 3d c1 2d 00 00 	lea    0x2dc1(%rip),%rdi        # 4018 <__TMC_END__>
+    1257:	48 8d 05 ba 2d 00 00 	lea    0x2dba(%rip),%rax        # 4018 <__TMC_END__>
+    125e:	48 39 f8             	cmp    %rdi,%rax
+    1261:	74 15                	je     1278 <deregister_tm_clones+0x28>
+    1263:	48 8b 05 76 2d 00 00 	mov    0x2d76(%rip),%rax        # 3fe0 <_ITM_deregisterTMCloneTable@Base>
+    126a:	48 85 c0             	test   %rax,%rax
+    126d:	74 09                	je     1278 <deregister_tm_clones+0x28>
+    126f:	ff e0                	jmp    *%rax
+    1271:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+    1278:	c3                   	ret    
+    1279:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000001280 <register_tm_clones>:
+    1280:	48 8d 3d 91 2d 00 00 	lea    0x2d91(%rip),%rdi        # 4018 <__TMC_END__>
+    1287:	48 8d 35 8a 2d 00 00 	lea    0x2d8a(%rip),%rsi        # 4018 <__TMC_END__>
+    128e:	48 29 fe             	sub    %rdi,%rsi
+    1291:	48 89 f0             	mov    %rsi,%rax
+    1294:	48 c1 ee 3f          	shr    $0x3f,%rsi
+    1298:	48 c1 f8 03          	sar    $0x3,%rax
+    129c:	48 01 c6             	add    %rax,%rsi
+    129f:	48 d1 fe             	sar    %rsi
+    12a2:	74 14                	je     12b8 <register_tm_clones+0x38>
+    12a4:	48 8b 05 45 2d 00 00 	mov    0x2d45(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable@Base>
+    12ab:	48 85 c0             	test   %rax,%rax
+    12ae:	74 08                	je     12b8 <register_tm_clones+0x38>
+    12b0:	ff e0                	jmp    *%rax
+    12b2:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+    12b8:	c3                   	ret    
+    12b9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+00000000000012c0 <__do_global_dtors_aux>:
+    12c0:	f3 0f 1e fa          	endbr64 
+    12c4:	80 3d 5d 2d 00 00 00 	cmpb   $0x0,0x2d5d(%rip)        # 4028 <completed.0>
+    12cb:	75 2b                	jne    12f8 <__do_global_dtors_aux+0x38>
+    12cd:	55                   	push   %rbp
+    12ce:	48 83 3d 22 2d 00 00 	cmpq   $0x0,0x2d22(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>
+    12d5:	00 
+    12d6:	48 89 e5             	mov    %rsp,%rbp
+    12d9:	74 0c                	je     12e7 <__do_global_dtors_aux+0x27>
+    12db:	48 8b 3d 26 2d 00 00 	mov    0x2d26(%rip),%rdi        # 4008 <__dso_handle>
+    12e2:	e8 39 fe ff ff       	call   1120 <__cxa_finalize@plt>
+    12e7:	e8 64 ff ff ff       	call   1250 <deregister_tm_clones>
+    12ec:	c6 05 35 2d 00 00 01 	movb   $0x1,0x2d35(%rip)        # 4028 <completed.0>
+    12f3:	5d                   	pop    %rbp
+    12f4:	c3                   	ret    
+    12f5:	0f 1f 00             	nopl   (%rax)
+    12f8:	c3                   	ret    
+    12f9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000001300 <frame_dummy>:
+    1300:	f3 0f 1e fa          	endbr64 
+    1304:	e9 77 ff ff ff       	jmp    1280 <register_tm_clones>
+
+0000000000001309 <panic>:
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+__attribute__((noreturn))
+void panic(const char *msg) {
+    1309:	f3 0f 1e fa          	endbr64 
+    130d:	50                   	push   %rax
+    130e:	58                   	pop    %rax
+    130f:	48 83 ec 08          	sub    $0x8,%rsp
+    1313:	48 89 f9             	mov    %rdi,%rcx
+
+# ifdef __va_arg_pack
+__fortify_function int
+fprintf (FILE *__restrict __stream, const char *__restrict __fmt, ...)
+{
+  return __fprintf_chk (__stream, __USE_FORTIFY_LEVEL - 1, __fmt,
+    1316:	48 8d 15 e7 0c 00 00 	lea    0xce7(%rip),%rdx        # 2004 <_IO_stdin_used+0x4>
+    131d:	be 01 00 00 00       	mov    $0x1,%esi
+    1322:	48 8b 3d f7 2c 00 00 	mov    0x2cf7(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    1329:	b8 00 00 00 00       	mov    $0x0,%eax
+    132e:	e8 dd fe ff ff       	call   1210 <__fprintf_chk@plt>
+  fprintf(stderr, "%s\n", msg);
+  exit(1);
+    1333:	bf 01 00 00 00       	mov    $0x1,%edi
+    1338:	e8 c3 fe ff ff       	call   1200 <exit@plt>
+
+000000000000133d <balloc>:
+  iappend(root, &dirent, sizeof dirent);
+  strcpy(dirent.name, "..");
+  iappend(root, &dirent, sizeof dirent);
+}
+
+uint32_t balloc() {
+    133d:	f3 0f 1e fa          	endbr64 
+  // alloc a unused block, mark it on bitmap, then return its no
+  static uint32_t next_blk = 64;
+  if (next_blk >= BLK_NUM) panic("no more block");
+    1341:	8b 05 cd 2c 00 00    	mov    0x2ccd(%rip),%eax        # 4014 <next_blk.2>
+    1347:	3d ff 7f 00 00       	cmp    $0x7fff,%eax
+    134c:	77 28                	ja     1376 <balloc+0x39>
+  bitmap->u8buf[next_blk / 8] |= (1 << (next_blk % 8));
+    134e:	48 8b 3d f3 2c 00 00 	mov    0x2cf3(%rip),%rdi        # 4048 <bitmap>
+    1355:	89 c2                	mov    %eax,%edx
+    1357:	c1 ea 03             	shr    $0x3,%edx
+    135a:	89 d2                	mov    %edx,%edx
+    135c:	89 c1                	mov    %eax,%ecx
+    135e:	83 e1 07             	and    $0x7,%ecx
+    1361:	be 01 00 00 00       	mov    $0x1,%esi
+    1366:	d3 e6                	shl    %cl,%esi
+    1368:	40 08 34 17          	or     %sil,(%rdi,%rdx,1)
+  return next_blk++;
+    136c:	8d 50 01             	lea    0x1(%rax),%edx
+    136f:	89 15 9f 2c 00 00    	mov    %edx,0x2c9f(%rip)        # 4014 <next_blk.2>
+}
+    1375:	c3                   	ret    
+uint32_t balloc() {
+    1376:	48 83 ec 08          	sub    $0x8,%rsp
+  if (next_blk >= BLK_NUM) panic("no more block");
+    137a:	48 8d 3d 87 0c 00 00 	lea    0xc87(%rip),%rdi        # 2008 <_IO_stdin_used+0x8>
+    1381:	e8 83 ff ff ff       	call   1309 <panic>
+
+0000000000001386 <ialloc>:
+
+uint32_t ialloc(int type) {
+    1386:	f3 0f 1e fa          	endbr64 
+  // alloc a unused inode, return its no
+  // first inode always unused, because dirent's inode 0 mark invalid
+  static uint32_t next_inode = 1;
+  if (next_inode >= INODE_NUM) panic("no more inode");
+    138a:	8b 15 80 2c 00 00    	mov    0x2c80(%rip),%edx        # 4010 <next_inode.1>
+    1390:	81 fa 7f 07 00 00    	cmp    $0x77f,%edx
+    1396:	77 2d                	ja     13c5 <ialloc+0x3f>
+  return (dinode_t*)&(bget(no/IPERBLK + INODE_START)->u8buf[(no%IPERBLK)*sizeof(dinode_t)]);
+    1398:	89 d0                	mov    %edx,%eax
+    139a:	c1 e8 06             	shr    $0x6,%eax
+  return &(img->blocks[no - BLK_OFF]);
+    139d:	83 c0 02             	add    $0x2,%eax
+  return (dinode_t*)&(bget(no/IPERBLK + INODE_START)->u8buf[(no%IPERBLK)*sizeof(dinode_t)]);
+    13a0:	89 c0                	mov    %eax,%eax
+    13a2:	89 d1                	mov    %edx,%ecx
+    13a4:	83 e1 3f             	and    $0x3f,%ecx
+  iget(next_inode)->type = type;
+    13a7:	48 c1 e0 0c          	shl    $0xc,%rax
+    13ab:	48 c1 e1 06          	shl    $0x6,%rcx
+    13af:	48 03 05 a2 2c 00 00 	add    0x2ca2(%rip),%rax        # 4058 <img>
+    13b6:	89 3c 08             	mov    %edi,(%rax,%rcx,1)
+  return next_inode++;
+    13b9:	8d 42 01             	lea    0x1(%rdx),%eax
+    13bc:	89 05 4e 2c 00 00    	mov    %eax,0x2c4e(%rip)        # 4010 <next_inode.1>
+}
+    13c2:	89 d0                	mov    %edx,%eax
+    13c4:	c3                   	ret    
+uint32_t ialloc(int type) {
+    13c5:	48 83 ec 08          	sub    $0x8,%rsp
+  if (next_inode >= INODE_NUM) panic("no more inode");
+    13c9:	48 8d 3d 46 0c 00 00 	lea    0xc46(%rip),%rdi        # 2016 <_IO_stdin_used+0x16>
+    13d0:	e8 34 ff ff ff       	call   1309 <panic>
+
+00000000000013d5 <iwalk>:
+
+blk_t *iwalk(dinode_t *file, uint32_t blk_no) {
+    13d5:	f3 0f 1e fa          	endbr64 
+    13d9:	41 54                	push   %r12
+    13db:	55                   	push   %rbp
+    13dc:	53                   	push   %rbx
+    13dd:	49 89 fc             	mov    %rdi,%r12
+    13e0:	89 f5                	mov    %esi,%ebp
+  // return the pointer to the file's data's blk_no th block, if no, alloc it
+  if (blk_no < NDIRECT) {
+    13e2:	83 fe 0b             	cmp    $0xb,%esi
+    13e5:	76 72                	jbe    1459 <iwalk+0x84>
+    // direct address
+    if(file->addrs[blk_no]  == 0)
+      file->addrs[blk_no] = balloc();
+    return bget(file->addrs[blk_no]);
+  }
+  blk_no -= NDIRECT;
+    13e7:	83 ed 0c             	sub    $0xc,%ebp
+  if (blk_no < NINDIRECT) {
+    13ea:	81 fd ff 03 00 00    	cmp    $0x3ff,%ebp
+    13f0:	0f 87 2e 01 00 00    	ja     1524 <iwalk+0x14f>
+    // indirect address
+    if(file->addrs[NDIRECT]  == 0)
+    13f6:	83 7f 3c 00          	cmpl   $0x0,0x3c(%rdi)
+    13fa:	0f 84 b2 00 00 00    	je     14b2 <iwalk+0xdd>
+      file->addrs[NDIRECT] = balloc();
+    blk_t* indirect_blk = bget(file->addrs[NDIRECT]);
+    1400:	41 8b 5c 24 3c       	mov    0x3c(%r12),%ebx
+  assert(no >= BLK_OFF);
+    1405:	83 fb 1f             	cmp    $0x1f,%ebx
+    1408:	0f 86 b8 00 00 00    	jbe    14c6 <iwalk+0xf1>
+  return &(img->blocks[no - BLK_OFF]);
+    140e:	4c 8b 25 43 2c 00 00 	mov    0x2c43(%rip),%r12        # 4058 <img>
+    1415:	83 eb 20             	sub    $0x20,%ebx
+    if(indirect_blk->u32buf[blk_no] == 0)
+    1418:	89 ea                	mov    %ebp,%edx
+    141a:	89 d8                	mov    %ebx,%eax
+    141c:	48 c1 e0 0a          	shl    $0xa,%rax
+    1420:	48 01 d0             	add    %rdx,%rax
+    1423:	41 83 3c 84 00       	cmpl   $0x0,(%r12,%rax,4)
+    1428:	0f 84 b7 00 00 00    	je     14e5 <iwalk+0x110>
+      indirect_blk->u32buf[blk_no] = balloc();
+    return bget(indirect_blk->u32buf[blk_no]);
+    142e:	89 ed                	mov    %ebp,%ebp
+    1430:	89 db                	mov    %ebx,%ebx
+    1432:	48 c1 e3 0a          	shl    $0xa,%rbx
+    1436:	48 01 eb             	add    %rbp,%rbx
+    1439:	41 8b 04 9c          	mov    (%r12,%rbx,4),%eax
+  assert(no >= BLK_OFF);
+    143d:	83 f8 1f             	cmp    $0x1f,%eax
+    1440:	0f 86 bf 00 00 00    	jbe    1505 <iwalk+0x130>
+  return &(img->blocks[no - BLK_OFF]);
+    1446:	8d 40 e0             	lea    -0x20(%rax),%eax
+    1449:	48 c1 e0 0c          	shl    $0xc,%rax
+    144d:	48 03 05 04 2c 00 00 	add    0x2c04(%rip),%rax        # 4058 <img>
+  }
+  panic("file too big");
+}
+    1454:	5b                   	pop    %rbx
+    1455:	5d                   	pop    %rbp
+    1456:	41 5c                	pop    %r12
+    1458:	c3                   	ret    
+    if(file->addrs[blk_no]  == 0)
+    1459:	89 f0                	mov    %esi,%eax
+    145b:	83 7c 87 0c 00       	cmpl   $0x0,0xc(%rdi,%rax,4)
+    1460:	74 1c                	je     147e <iwalk+0xa9>
+    return bget(file->addrs[blk_no]);
+    1462:	89 eb                	mov    %ebp,%ebx
+    1464:	41 8b 44 9c 0c       	mov    0xc(%r12,%rbx,4),%eax
+  assert(no >= BLK_OFF);
+    1469:	83 f8 1f             	cmp    $0x1f,%eax
+    146c:	76 25                	jbe    1493 <iwalk+0xbe>
+  return &(img->blocks[no - BLK_OFF]);
+    146e:	8d 40 e0             	lea    -0x20(%rax),%eax
+    1471:	48 c1 e0 0c          	shl    $0xc,%rax
+    1475:	48 03 05 dc 2b 00 00 	add    0x2bdc(%rip),%rax        # 4058 <img>
+    return bget(file->addrs[blk_no]);
+    147c:	eb d6                	jmp    1454 <iwalk+0x7f>
+      file->addrs[blk_no] = balloc();
+    147e:	b8 00 00 00 00       	mov    $0x0,%eax
+    1483:	e8 b5 fe ff ff       	call   133d <balloc>
+    1488:	89 c2                	mov    %eax,%edx
+    148a:	89 e8                	mov    %ebp,%eax
+    148c:	41 89 54 84 0c       	mov    %edx,0xc(%r12,%rax,4)
+    1491:	eb cf                	jmp    1462 <iwalk+0x8d>
+  assert(no >= BLK_OFF);
+    1493:	48 8d 0d ff 0b 00 00 	lea    0xbff(%rip),%rcx        # 2099 <__PRETTY_FUNCTION__.3>
+    149a:	ba 5c 00 00 00       	mov    $0x5c,%edx
+    149f:	48 8d 35 7e 0b 00 00 	lea    0xb7e(%rip),%rsi        # 2024 <_IO_stdin_used+0x24>
+    14a6:	48 8d 3d 84 0b 00 00 	lea    0xb84(%rip),%rdi        # 2031 <_IO_stdin_used+0x31>
+    14ad:	e8 ce fc ff ff       	call   1180 <__assert_fail@plt>
+      file->addrs[NDIRECT] = balloc();
+    14b2:	b8 00 00 00 00       	mov    $0x0,%eax
+    14b7:	e8 81 fe ff ff       	call   133d <balloc>
+    14bc:	41 89 44 24 3c       	mov    %eax,0x3c(%r12)
+    14c1:	e9 3a ff ff ff       	jmp    1400 <iwalk+0x2b>
+  assert(no >= BLK_OFF);
+    14c6:	48 8d 0d cc 0b 00 00 	lea    0xbcc(%rip),%rcx        # 2099 <__PRETTY_FUNCTION__.3>
+    14cd:	ba 5c 00 00 00       	mov    $0x5c,%edx
+    14d2:	48 8d 35 4b 0b 00 00 	lea    0xb4b(%rip),%rsi        # 2024 <_IO_stdin_used+0x24>
+    14d9:	48 8d 3d 51 0b 00 00 	lea    0xb51(%rip),%rdi        # 2031 <_IO_stdin_used+0x31>
+    14e0:	e8 9b fc ff ff       	call   1180 <__assert_fail@plt>
+      indirect_blk->u32buf[blk_no] = balloc();
+    14e5:	b8 00 00 00 00       	mov    $0x0,%eax
+    14ea:	e8 4e fe ff ff       	call   133d <balloc>
+    14ef:	89 c1                	mov    %eax,%ecx
+    14f1:	89 ea                	mov    %ebp,%edx
+    14f3:	89 d8                	mov    %ebx,%eax
+    14f5:	48 c1 e0 0a          	shl    $0xa,%rax
+    14f9:	48 01 d0             	add    %rdx,%rax
+    14fc:	41 89 0c 84          	mov    %ecx,(%r12,%rax,4)
+    1500:	e9 29 ff ff ff       	jmp    142e <iwalk+0x59>
+  assert(no >= BLK_OFF);
+    1505:	48 8d 0d 8d 0b 00 00 	lea    0xb8d(%rip),%rcx        # 2099 <__PRETTY_FUNCTION__.3>
+    150c:	ba 5c 00 00 00       	mov    $0x5c,%edx
+    1511:	48 8d 35 0c 0b 00 00 	lea    0xb0c(%rip),%rsi        # 2024 <_IO_stdin_used+0x24>
+    1518:	48 8d 3d 12 0b 00 00 	lea    0xb12(%rip),%rdi        # 2031 <_IO_stdin_used+0x31>
+    151f:	e8 5c fc ff ff       	call   1180 <__assert_fail@plt>
+  panic("file too big");
+    1524:	48 8d 3d 14 0b 00 00 	lea    0xb14(%rip),%rdi        # 203f <_IO_stdin_used+0x3f>
+    152b:	e8 d9 fd ff ff       	call   1309 <panic>
+
+0000000000001530 <iappend>:
+
+void iappend(dinode_t *file, const void *buf, uint32_t size) {
+    1530:	f3 0f 1e fa          	endbr64 
+  // append buf to file's data, remember to add file->size
+  // you can append block by block
+  while(size > 0){
+    1534:	85 d2                	test   %edx,%edx
+    1536:	0f 84 c3 00 00 00    	je     15ff <iappend+0xcf>
+void iappend(dinode_t *file, const void *buf, uint32_t size) {
+    153c:	41 55                	push   %r13
+    153e:	41 54                	push   %r12
+    1540:	55                   	push   %rbp
+    1541:	53                   	push   %rbx
+    1542:	48 83 ec 08          	sub    $0x8,%rsp
+    1546:	48 89 fd             	mov    %rdi,%rbp
+    1549:	49 89 f4             	mov    %rsi,%r12
+    154c:	89 d3                	mov    %edx,%ebx
+    uint32_t blk_no = file->size / BLK_SIZE;
+    blk_t* block = iwalk(file, blk_no);
+    uint32_t offsize = file->size % BLK_SIZE;
+    uint32_t actually_write = (BLK_SIZE - offsize) > size ? size : (BLK_SIZE - offsize);
+    154e:	41 bd 00 10 00 00    	mov    $0x1000,%r13d
+    1554:	eb 4b                	jmp    15a1 <iappend+0x71>
+
+__fortify_function void *
+__NTH (memcpy (void *__restrict __dest, const void *__restrict __src,
+	       size_t __len))
+{
+  return __builtin___memcpy_chk (__dest, __src, __len,
+    1556:	41 8b 14 24          	mov    (%r12),%edx
+    155a:	89 11                	mov    %edx,(%rcx)
+    155c:	89 c2                	mov    %eax,%edx
+    155e:	41 8b 74 14 fc       	mov    -0x4(%r12,%rdx,1),%esi
+    1563:	89 74 11 fc          	mov    %esi,-0x4(%rcx,%rdx,1)
+    1567:	eb 2e                	jmp    1597 <iappend+0x67>
+    1569:	49 8b 14 24          	mov    (%r12),%rdx
+    156d:	48 89 11             	mov    %rdx,(%rcx)
+    1570:	89 c2                	mov    %eax,%edx
+    1572:	49 8b 74 14 f8       	mov    -0x8(%r12,%rdx,1),%rsi
+    1577:	48 89 74 11 f8       	mov    %rsi,-0x8(%rcx,%rdx,1)
+    157c:	48 8d 79 08          	lea    0x8(%rcx),%rdi
+    1580:	48 83 e7 f8          	and    $0xfffffffffffffff8,%rdi
+    1584:	48 29 f9             	sub    %rdi,%rcx
+    1587:	4c 89 e6             	mov    %r12,%rsi
+    158a:	48 29 ce             	sub    %rcx,%rsi
+    158d:	01 c1                	add    %eax,%ecx
+    158f:	c1 e9 03             	shr    $0x3,%ecx
+    1592:	89 c9                	mov    %ecx,%ecx
+    1594:	f3 48 a5             	rep movsq %ds:(%rsi),%es:(%rdi)
+    memcpy(&block->u8buf[offsize], buf, actually_write);
+    file->size += actually_write;
+    1597:	01 45 08             	add    %eax,0x8(%rbp)
+    buf += actually_write;
+    159a:	4d 01 c4             	add    %r8,%r12
+  while(size > 0){
+    159d:	29 c3                	sub    %eax,%ebx
+    159f:	74 53                	je     15f4 <iappend+0xc4>
+    uint32_t blk_no = file->size / BLK_SIZE;
+    15a1:	8b 75 08             	mov    0x8(%rbp),%esi
+    15a4:	c1 ee 0c             	shr    $0xc,%esi
+    blk_t* block = iwalk(file, blk_no);
+    15a7:	48 89 ef             	mov    %rbp,%rdi
+    15aa:	e8 26 fe ff ff       	call   13d5 <iwalk>
+    15af:	48 89 c1             	mov    %rax,%rcx
+    uint32_t offsize = file->size % BLK_SIZE;
+    15b2:	8b 55 08             	mov    0x8(%rbp),%edx
+    15b5:	81 e2 ff 0f 00 00    	and    $0xfff,%edx
+    uint32_t actually_write = (BLK_SIZE - offsize) > size ? size : (BLK_SIZE - offsize);
+    15bb:	44 89 e8             	mov    %r13d,%eax
+    15be:	29 d0                	sub    %edx,%eax
+    15c0:	39 d8                	cmp    %ebx,%eax
+    15c2:	0f 47 c3             	cmova  %ebx,%eax
+    memcpy(&block->u8buf[offsize], buf, actually_write);
+    15c5:	41 89 c0             	mov    %eax,%r8d
+    15c8:	89 d2                	mov    %edx,%edx
+    15ca:	48 01 d1             	add    %rdx,%rcx
+    15cd:	83 f8 08             	cmp    $0x8,%eax
+    15d0:	73 97                	jae    1569 <iappend+0x39>
+    15d2:	a8 04                	test   $0x4,%al
+    15d4:	75 80                	jne    1556 <iappend+0x26>
+    15d6:	85 c0                	test   %eax,%eax
+    15d8:	74 bd                	je     1597 <iappend+0x67>
+    15da:	41 0f b6 14 24       	movzbl (%r12),%edx
+    15df:	88 11                	mov    %dl,(%rcx)
+    15e1:	a8 02                	test   $0x2,%al
+    15e3:	74 b2                	je     1597 <iappend+0x67>
+    15e5:	89 c2                	mov    %eax,%edx
+    15e7:	41 0f b7 74 14 fe    	movzwl -0x2(%r12,%rdx,1),%esi
+    15ed:	66 89 74 11 fe       	mov    %si,-0x2(%rcx,%rdx,1)
+    15f2:	eb a3                	jmp    1597 <iappend+0x67>
+    size -= actually_write;
+  }
+}
+    15f4:	48 83 c4 08          	add    $0x8,%rsp
+    15f8:	5b                   	pop    %rbx
+    15f9:	5d                   	pop    %rbp
+    15fa:	41 5c                	pop    %r12
+    15fc:	41 5d                	pop    %r13
+    15fe:	c3                   	ret    
+    15ff:	c3                   	ret    
+
+0000000000001600 <init_disk>:
+void init_disk() {
+    1600:	f3 0f 1e fa          	endbr64 
+    1604:	53                   	push   %rbx
+    1605:	48 83 ec 30          	sub    $0x30,%rsp
+    1609:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    1610:	00 00 
+    1612:	48 89 44 24 28       	mov    %rax,0x28(%rsp)
+    1617:	31 c0                	xor    %eax,%eax
+  return &(img->blocks[no - BLK_OFF]);
+    1619:	48 8b 05 38 2a 00 00 	mov    0x2a38(%rip),%rax        # 4058 <img>
+  sb = (sb_t*)bget(SUPER_BLK);
+    1620:	48 89 05 29 2a 00 00 	mov    %rax,0x2a29(%rip)        # 4050 <sb>
+  sb->bitmap = BITMAP_BLK;
+    1627:	c7 00 21 00 00 00    	movl   $0x21,(%rax)
+  sb->istart = INODE_START;
+    162d:	48 8b 05 1c 2a 00 00 	mov    0x2a1c(%rip),%rax        # 4050 <sb>
+    1634:	c7 40 04 22 00 00 00 	movl   $0x22,0x4(%rax)
+  sb->inum = INODE_NUM;
+    163b:	48 8b 1d 0e 2a 00 00 	mov    0x2a0e(%rip),%rbx        # 4050 <sb>
+    1642:	c7 43 08 80 07 00 00 	movl   $0x780,0x8(%rbx)
+  return &(img->blocks[no - BLK_OFF]);
+    1649:	48 8b 05 08 2a 00 00 	mov    0x2a08(%rip),%rax        # 4058 <img>
+    1650:	48 8d 90 00 10 00 00 	lea    0x1000(%rax),%rdx
+    1657:	48 89 15 ea 29 00 00 	mov    %rdx,0x29ea(%rip)        # 4048 <bitmap>
+  bitmap->u32buf[0] = bitmap->u32buf[1] = 0xffffffff;
+    165e:	c7 80 04 10 00 00 ff 	movl   $0xffffffff,0x1004(%rax)
+    1665:	ff ff ff 
+    1668:	c7 80 00 10 00 00 ff 	movl   $0xffffffff,0x1000(%rax)
+    166f:	ff ff ff 
+  sb->root = ialloc(TYPE_DIR);
+    1672:	bf 02 00 00 00       	mov    $0x2,%edi
+    1677:	e8 0a fd ff ff       	call   1386 <ialloc>
+    167c:	89 43 0c             	mov    %eax,0xc(%rbx)
+  root = iget(sb->root);
+    167f:	48 8b 05 ca 29 00 00 	mov    0x29ca(%rip),%rax        # 4050 <sb>
+    1686:	8b 40 0c             	mov    0xc(%rax),%eax
+  return (dinode_t*)&(bget(no/IPERBLK + INODE_START)->u8buf[(no%IPERBLK)*sizeof(dinode_t)]);
+    1689:	89 c7                	mov    %eax,%edi
+    168b:	c1 ef 06             	shr    $0x6,%edi
+  return &(img->blocks[no - BLK_OFF]);
+    168e:	83 c7 02             	add    $0x2,%edi
+  return (dinode_t*)&(bget(no/IPERBLK + INODE_START)->u8buf[(no%IPERBLK)*sizeof(dinode_t)]);
+    1691:	89 ff                	mov    %edi,%edi
+    1693:	48 c1 e7 0c          	shl    $0xc,%rdi
+    1697:	89 c2                	mov    %eax,%edx
+    1699:	83 e2 3f             	and    $0x3f,%edx
+    169c:	48 c1 e2 06          	shl    $0x6,%rdx
+    16a0:	48 01 d7             	add    %rdx,%rdi
+    16a3:	48 03 3d ae 29 00 00 	add    0x29ae(%rip),%rdi        # 4058 <img>
+  root = iget(sb->root);
+    16aa:	48 89 3d 8f 29 00 00 	mov    %rdi,0x298f(%rip)        # 4040 <root>
+  dirent.inode = sb->root;
+    16b1:	89 04 24             	mov    %eax,(%rsp)
+#endif
+
+__fortify_function char *
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+{
+  return __builtin___strcpy_chk (__dest, __src, __glibc_objsize (__dest));
+    16b4:	48 89 e3             	mov    %rsp,%rbx
+    16b7:	66 c7 44 24 04 2e 00 	movw   $0x2e,0x4(%rsp)
+  iappend(root, &dirent, sizeof dirent);
+    16be:	ba 20 00 00 00       	mov    $0x20,%edx
+    16c3:	48 89 de             	mov    %rbx,%rsi
+    16c6:	e8 65 fe ff ff       	call   1530 <iappend>
+    16cb:	66 c7 44 24 04 2e 2e 	movw   $0x2e2e,0x4(%rsp)
+    16d2:	c6 44 24 06 00       	movb   $0x0,0x6(%rsp)
+  iappend(root, &dirent, sizeof dirent);
+    16d7:	ba 20 00 00 00       	mov    $0x20,%edx
+    16dc:	48 89 de             	mov    %rbx,%rsi
+    16df:	48 8b 3d 5a 29 00 00 	mov    0x295a(%rip),%rdi        # 4040 <root>
+    16e6:	e8 45 fe ff ff       	call   1530 <iappend>
+}
+    16eb:	48 8b 44 24 28       	mov    0x28(%rsp),%rax
+    16f0:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    16f7:	00 00 
+    16f9:	75 06                	jne    1701 <init_disk+0x101>
+    16fb:	48 83 c4 30          	add    $0x30,%rsp
+    16ff:	5b                   	pop    %rbx
+    1700:	c3                   	ret    
+    1701:	e8 4a fa ff ff       	call   1150 <__stack_chk_fail@plt>
+
+0000000000001706 <add_file>:
+
+
+void add_file(char *path) {
+    1706:	f3 0f 1e fa          	endbr64 
+    170a:	41 54                	push   %r12
+    170c:	55                   	push   %rbp
+    170d:	53                   	push   %rbx
+    170e:	48 83 ec 30          	sub    $0x30,%rsp
+    1712:	49 89 fc             	mov    %rdi,%r12
+    1715:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    171c:	00 00 
+    171e:	48 89 44 24 28       	mov    %rax,0x28(%rsp)
+    1723:	31 c0                	xor    %eax,%eax
+  static uint8_t buf[BLK_SIZE];
+  FILE *fp = fopen(path, "rb");
+    1725:	48 8d 35 20 09 00 00 	lea    0x920(%rip),%rsi        # 204c <_IO_stdin_used+0x4c>
+    172c:	e8 bf fa ff ff       	call   11f0 <fopen@plt>
+  if (!fp) panic("file not exist");
+    1731:	48 85 c0             	test   %rax,%rax
+    1734:	74 6b                	je     17a1 <add_file+0x9b>
+    1736:	48 89 c3             	mov    %rax,%rbx
+  // alloc a inode
+  uint32_t inode_blk = ialloc(TYPE_FILE);
+    1739:	bf 01 00 00 00       	mov    $0x1,%edi
+    173e:	e8 43 fc ff ff       	call   1386 <ialloc>
+  return (dinode_t*)&(bget(no/IPERBLK + INODE_START)->u8buf[(no%IPERBLK)*sizeof(dinode_t)]);
+    1743:	89 c5                	mov    %eax,%ebp
+    1745:	c1 ed 06             	shr    $0x6,%ebp
+  return &(img->blocks[no - BLK_OFF]);
+    1748:	83 c5 02             	add    $0x2,%ebp
+  return (dinode_t*)&(bget(no/IPERBLK + INODE_START)->u8buf[(no%IPERBLK)*sizeof(dinode_t)]);
+    174b:	89 ed                	mov    %ebp,%ebp
+    174d:	48 c1 e5 0c          	shl    $0xc,%rbp
+    1751:	89 c2                	mov    %eax,%edx
+    1753:	83 e2 3f             	and    $0x3f,%edx
+    1756:	48 c1 e2 06          	shl    $0x6,%rdx
+    175a:	48 01 d5             	add    %rdx,%rbp
+    175d:	48 03 2d f4 28 00 00 	add    0x28f4(%rip),%rbp        # 4058 <img>
+  dinode_t *inode = iget(inode_blk);
+  // append dirent to root dir
+  dirent_t dirent;
+  dirent.inode = inode_blk;
+    1764:	89 04 24             	mov    %eax,(%rsp)
+  strcpy(dirent.name, basename(path));
+    1767:	4c 89 e7             	mov    %r12,%rdi
+    176a:	e8 41 fa ff ff       	call   11b0 <__xpg_basename@plt>
+    176f:	48 89 c6             	mov    %rax,%rsi
+    1772:	49 89 e4             	mov    %rsp,%r12
+    1775:	48 8d 7c 24 04       	lea    0x4(%rsp),%rdi
+    177a:	ba 1c 00 00 00       	mov    $0x1c,%edx
+    177f:	e8 3c fa ff ff       	call   11c0 <__strcpy_chk@plt>
+  iappend(root, &dirent, sizeof dirent);
+    1784:	ba 20 00 00 00       	mov    $0x20,%edx
+    1789:	4c 89 e6             	mov    %r12,%rsi
+    178c:	48 8b 3d ad 28 00 00 	mov    0x28ad(%rip),%rdi        # 4040 <root>
+    1793:	e8 98 fd ff ff       	call   1530 <iappend>
+fread (void *__restrict __ptr, size_t __size, size_t __n,
+       FILE *__restrict __stream)
+{
+  size_t sz = __glibc_objsize0 (__ptr);
+  if (__glibc_safe_or_unknown_len (__n, __size, sz))
+    return __fread_alias (__ptr, __size, __n, __stream);
+    1798:	4c 8d 25 c1 28 00 00 	lea    0x28c1(%rip),%r12        # 4060 <buf.0>
+  // write the file's data, first read it to buf then call iappend
+  while(!feof(fp)){
+    179f:	eb 2e                	jmp    17cf <add_file+0xc9>
+  if (!fp) panic("file not exist");
+    17a1:	48 8d 3d a7 08 00 00 	lea    0x8a7(%rip),%rdi        # 204f <_IO_stdin_used+0x4f>
+    17a8:	e8 5c fb ff ff       	call   1309 <panic>
+    17ad:	48 89 d9             	mov    %rbx,%rcx
+    17b0:	ba 00 10 00 00       	mov    $0x1000,%edx
+    17b5:	be 01 00 00 00       	mov    $0x1,%esi
+    17ba:	4c 89 e7             	mov    %r12,%rdi
+    17bd:	e8 6e f9 ff ff       	call   1130 <fread@plt>
+    int read_size = fread(buf, 1, BLK_SIZE, fp);
+    iappend(inode, &buf, (uint32_t)read_size);
+    17c2:	89 c2                	mov    %eax,%edx
+    17c4:	4c 89 e6             	mov    %r12,%rsi
+    17c7:	48 89 ef             	mov    %rbp,%rdi
+    17ca:	e8 61 fd ff ff       	call   1530 <iappend>
+  while(!feof(fp)){
+    17cf:	48 89 df             	mov    %rbx,%rdi
+    17d2:	e8 c9 f9 ff ff       	call   11a0 <feof@plt>
+    17d7:	85 c0                	test   %eax,%eax
+    17d9:	74 d2                	je     17ad <add_file+0xa7>
+  }
+  fclose(fp);
+    17db:	48 89 df             	mov    %rbx,%rdi
+    17de:	e8 5d f9 ff ff       	call   1140 <fclose@plt>
+}
+    17e3:	48 8b 44 24 28       	mov    0x28(%rsp),%rax
+    17e8:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    17ef:	00 00 
+    17f1:	75 09                	jne    17fc <add_file+0xf6>
+    17f3:	48 83 c4 30          	add    $0x30,%rsp
+    17f7:	5b                   	pop    %rbx
+    17f8:	5d                   	pop    %rbp
+    17f9:	41 5c                	pop    %r12
+    17fb:	c3                   	ret    
+    17fc:	e8 4f f9 ff ff       	call   1150 <__stack_chk_fail@plt>
+
+0000000000001801 <main>:
+int main(int argc, char *argv[]) {
+    1801:	f3 0f 1e fa          	endbr64 
+    1805:	41 55                	push   %r13
+    1807:	41 54                	push   %r12
+    1809:	55                   	push   %rbp
+    180a:	53                   	push   %rbx
+    180b:	48 83 ec 08          	sub    $0x8,%rsp
+  assert(argc > 2);
+    180f:	83 ff 02             	cmp    $0x2,%edi
+    1812:	0f 8e c1 00 00 00    	jle    18d9 <main+0xd8>
+    1818:	41 89 fd             	mov    %edi,%r13d
+    181b:	48 89 f5             	mov    %rsi,%rbp
+      if (__OPEN_NEEDS_MODE (__oflag) && __va_arg_pack_len () < 1)
+	{
+	  __open_missing_mode ();
+	  return __open_2 (__path, __oflag);
+	}
+      return __open_alias (__path, __oflag, __va_arg_pack ());
+    181e:	48 8b 7e 08          	mov    0x8(%rsi),%rdi
+    1822:	ba ff 01 00 00       	mov    $0x1ff,%edx
+    1827:	be 42 02 00 00       	mov    $0x242,%esi
+    182c:	b8 00 00 00 00       	mov    $0x0,%eax
+    1831:	e8 aa f9 ff ff       	call   11e0 <open@plt>
+    1836:	41 89 c4             	mov    %eax,%r12d
+  if (tfd < 0) panic("open target error");
+    1839:	85 c0                	test   %eax,%eax
+    183b:	0f 88 b7 00 00 00    	js     18f8 <main+0xf7>
+  if (ftruncate(tfd, IMG_SIZE) < 0) panic("truncate error");
+    1841:	be 00 00 fe 07       	mov    $0x7fe0000,%esi
+    1846:	89 c7                	mov    %eax,%edi
+    1848:	e8 23 f9 ff ff       	call   1170 <ftruncate@plt>
+    184d:	85 c0                	test   %eax,%eax
+    184f:	0f 88 af 00 00 00    	js     1904 <main+0x103>
+  img = mmap(NULL, IMG_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, tfd, 0);
+    1855:	41 b9 00 00 00 00    	mov    $0x0,%r9d
+    185b:	45 89 e0             	mov    %r12d,%r8d
+    185e:	b9 01 00 00 00       	mov    $0x1,%ecx
+    1863:	ba 03 00 00 00       	mov    $0x3,%edx
+    1868:	be 00 00 fe 07       	mov    $0x7fe0000,%esi
+    186d:	bf 00 00 00 00       	mov    $0x0,%edi
+    1872:	e8 e9 f8 ff ff       	call   1160 <mmap@plt>
+    1877:	48 89 05 da 27 00 00 	mov    %rax,0x27da(%rip)        # 4058 <img>
+  assert(img != (void*)-1);
+    187e:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+    1882:	0f 84 88 00 00 00    	je     1910 <main+0x10f>
+  init_disk();
+    1888:	b8 00 00 00 00       	mov    $0x0,%eax
+    188d:	e8 6e fd ff ff       	call   1600 <init_disk>
+  for (int i = 2; i < argc; ++i) {
+    1892:	48 8d 5d 10          	lea    0x10(%rbp),%rbx
+    1896:	41 8d 45 fd          	lea    -0x3(%r13),%eax
+    189a:	48 8d 6c c5 18       	lea    0x18(%rbp,%rax,8),%rbp
+    add_file(argv[i]);
+    189f:	48 8b 3b             	mov    (%rbx),%rdi
+    18a2:	e8 5f fe ff ff       	call   1706 <add_file>
+  for (int i = 2; i < argc; ++i) {
+    18a7:	48 83 c3 08          	add    $0x8,%rbx
+    18ab:	48 39 eb             	cmp    %rbp,%rbx
+    18ae:	75 ef                	jne    189f <main+0x9e>
+  munmap(img, IMG_SIZE);
+    18b0:	be 00 00 fe 07       	mov    $0x7fe0000,%esi
+    18b5:	48 8b 3d 9c 27 00 00 	mov    0x279c(%rip),%rdi        # 4058 <img>
+    18bc:	e8 0f f9 ff ff       	call   11d0 <munmap@plt>
+  close(tfd);
+    18c1:	44 89 e7             	mov    %r12d,%edi
+    18c4:	e8 c7 f8 ff ff       	call   1190 <close@plt>
+}
+    18c9:	b8 00 00 00 00       	mov    $0x0,%eax
+    18ce:	48 83 c4 08          	add    $0x8,%rsp
+    18d2:	5b                   	pop    %rbx
+    18d3:	5d                   	pop    %rbp
+    18d4:	41 5c                	pop    %r12
+    18d6:	41 5d                	pop    %r13
+    18d8:	c3                   	ret    
+  assert(argc > 2);
+    18d9:	48 8d 0d be 07 00 00 	lea    0x7be(%rip),%rcx        # 209e <__PRETTY_FUNCTION__.4>
+    18e0:	ba 6e 00 00 00       	mov    $0x6e,%edx
+    18e5:	48 8d 35 38 07 00 00 	lea    0x738(%rip),%rsi        # 2024 <_IO_stdin_used+0x24>
+    18ec:	48 8d 3d 6b 07 00 00 	lea    0x76b(%rip),%rdi        # 205e <_IO_stdin_used+0x5e>
+    18f3:	e8 88 f8 ff ff       	call   1180 <__assert_fail@plt>
+  if (tfd < 0) panic("open target error");
+    18f8:	48 8d 3d 68 07 00 00 	lea    0x768(%rip),%rdi        # 2067 <_IO_stdin_used+0x67>
+    18ff:	e8 05 fa ff ff       	call   1309 <panic>
+  if (ftruncate(tfd, IMG_SIZE) < 0) panic("truncate error");
+    1904:	48 8d 3d 6e 07 00 00 	lea    0x76e(%rip),%rdi        # 2079 <_IO_stdin_used+0x79>
+    190b:	e8 f9 f9 ff ff       	call   1309 <panic>
+  assert(img != (void*)-1);
+    1910:	48 8d 0d 87 07 00 00 	lea    0x787(%rip),%rcx        # 209e <__PRETTY_FUNCTION__.4>
+    1917:	ba 76 00 00 00       	mov    $0x76,%edx
+    191c:	48 8d 35 01 07 00 00 	lea    0x701(%rip),%rsi        # 2024 <_IO_stdin_used+0x24>
+    1923:	48 8d 3d 5e 07 00 00 	lea    0x75e(%rip),%rdi        # 2088 <_IO_stdin_used+0x88>
+    192a:	e8 51 f8 ff ff       	call   1180 <__assert_fail@plt>
+
+Disassembly of section .fini:
+
+0000000000001930 <_fini>:
+    1930:	f3 0f 1e fa          	endbr64 
+    1934:	48 83 ec 08          	sub    $0x8,%rsp
+    1938:	48 83 c4 08          	add    $0x8,%rsp
+    193c:	c3                   	ret    

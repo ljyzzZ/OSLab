@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "ulib.h": "c",
+        "new": "c",
+        "cstdio": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/lucas/oslab/build/utils",
+            "binaryPath": "/home/lucas/oslab/build/utils/mkfs",
+            "binaryArgs": []
+        }
+    ]
+}
